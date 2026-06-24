@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Glow — Fine Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-text">Royal Glow</div>
+  </div>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-mobile" id="closeMenu">✕</button>
+    <a href="#" onclick="closeNav()">Collections</a>
+    <a href="#" onclick="closeNav()">New Arrivals</a>
+    <a href="#" onclick="closeNav()">About</a>
+    <a href="#" onclick="closeNav()">Contact</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">ROYAL GLOW</a>
+    <ul class="nav-links">
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#featured">New Arrivals</a></li>
+      <li><a href="#banner">Our Story</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <button class="nav-cart" id="cartBtn">
+        Cart
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">New Collection 2026</div>
+      <h1>Timeless<br><em>Elegance</em><br>Redefined</h1>
+      <p>Handcrafted fine jewellery that tells your unique story. Each piece is a masterwork of artistry and precious
+        materials.</p>
+      <div class="hero-btns">
+        <a href="#featured" class="btn-primary">Explore Collection</a>
+        <a href="#categories" class="btn-outline">Shop by Category</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item">Free Shipping on orders above ₹10,000</div>
+      <div class="marquee-item">Certified Hallmark Gold</div>
+      <div class="marquee-item">100-Day Easy Returns</div>
+      <div class="marquee-item">Lifetime Free Cleaning</div>
+      <div class="marquee-item">BIS Hallmarked Jewellery</div>
+      <div class="marquee-item">Custom Engravings Available</div>
+      <div class="marquee-item">Free Shipping on orders above ₹10,000</div>
+      <div class="marquee-item">Certified Hallmark Gold</div>
+      <div class="marquee-item">100-Day Easy Returns</div>
+      <div class="marquee-item">Lifetime Free Cleaning</div>
+      <div class="marquee-item">BIS Hallmarked Jewellery</div>
+      <div class="marquee-item">Custom Engravings Available</div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <div class="section-tag">Browse by Style</div>
+      <h2>Our <em>Collections</em></h2>
+    </div>
+    <div class="categories-grid">
+      <!-- Large card -->
+      <div class="cat-card">
+        <img class="cat-img" src="https://i1-c.pinimg.com/1200x/3e/3e/b6/3e3eb603681a9a221c0042028c856d6e.jpg"
+          alt="Necklaces">
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span>Best Seller</span>
+          <h3>Luxury<br>Necklaces</h3>
+          <a href="#featured" class="cat-link">Explore Now</a>
+        </div>
+      </div>
+      <!-- Others -->
+      <div class="cat-card">
+        <img class="cat-img" src="https://i.pinimg.com/736x/f3/ec/a5/f3eca562b04654e8599bd12f5af416ae.jpg" alt="Rings">
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span>New Arrivals</span>
+          <h3>Bridal Rings</h3>
+          <a href="#featured" class="cat-link">Explore Now</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img class="cat-img" src="https://i.pinimg.com/736x/3c/30/e9/3c30e983e62315d9d3d5c5a8db93a6a8.jpg"
+          alt="Earrings">
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span>Trending</span>
+          <h3>Drop Earrings</h3>
+          <a href="#featured" class="cat-link">Explore Now</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img class="cat-img" src="https://i1-c.pinimg.com/736x/31/3c/5d/313c5d44952edb42bf0c371146646007.jpg"
+          alt="Bracelets">
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span>Limited Edition</span>
+          <h3>Gold Bracelets</h3>
+          <a href="#featured" class="cat-link">Explore Now</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img class="cat-img" src="https://i1-c.pinimg.com/webp85/1200x/96/6a/a7/966aa7cda7f9f66e66e4cfde0f73c7d8.webp"
+          alt="Bangles">
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span>Heritage</span>
+          <h3>Classic Bangles</h3>
+          <a href="#featured" class="cat-link">Explore Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured" id="featured">
+    <div class="section-header">
+      <div class="section-tag">Handpicked for You</div>
+      <h2>New <em>Arrivals</em></h2>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Products inserted by JS -->
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="banner" id="banner">
+    <div class="banner-bg" id="bannerBg"></div>
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <div class="section-tag">Our Craft</div>
+      <h2>Where <em>Art Meets</em><br>Precious Metal</h2>
+      <p>Every piece in our collection is crafted by master artisans using centuries-old techniques combined with modern
+        precision. From concept to creation, we ensure perfection in every detail.</p>
+      <a href="#featured" class="btn-primary">Discover Our Story</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <div class="section-tag">Customer Love</div>
+      <h2>What Our Clients <em>Say</em></h2>
+    </div>
+    <div class="testi-slider">
+      <div class="testi-slide active">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The necklace I ordered for my anniversary was breathtaking. The craftsmanship is
+          extraordinary — it arrived beautifully packaged and my wife was moved to tears."</p>
+        <div class="testi-author">Rajan Mehta<span>Mumbai, Maharashtra</span></div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I've purchased from many jewellers but Lumière is truly in a class of its own. The
+          diamond ring sparkles unlike anything I've seen. Worth every penny."</p>
+        <div class="testi-author">Priya Sharma<span>Delhi, NCR</span></div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Exceptional quality and service. The gold bangles I ordered for my daughter's wedding
+          were absolutely perfect. The whole family was in awe. Highly recommended!"</p>
+        <div class="testi-author">Sunita Patel<span>Surat, Gujarat</span></div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Custom engraving done flawlessly on our wedding bands. The team was responsive, patient,
+          and delivered exactly what we envisioned. Our forever pieces."</p>
+        <div class="testi-author">Arjun & Kavya Nair<span>Bangalore, Karnataka</span></div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-inner">
+      <div class="section-tag">Stay Connected</div>
+      <h2>Join the Lumière Circle</h2>
+      <p>Be the first to discover new collections, exclusive offers, and styling inspiration. Subscribe and receive 10%
+        off your first order.</p>
+      <div class="newsletter-form">
+        <input type="email" id="emailInput" placeholder="Your email address">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">LUMIÈRE</a>
+        <p>Crafting timeless pieces since 1987. Where tradition meets contemporary design, each jewel tells a story of
+          luxury and artistry.</p>
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">in</a>
+          <a href="#">yt</a>
+          <a href="#">p</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="#">Gold Jewellery</a></li>
+          <li><a href="#">Diamond Pieces</a></li>
+          <li><a href="#">Bridal Sets</a></li>
+          <li><a href="#">Men's Collection</a></li>
+          <li><a href="#">Kids' Jewellery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Custom Orders</a></li>
+          <li><a href="#">Jewellery Repair</a></li>
+          <li><a href="#">Cleaning & Polish</a></li>
+          <li><a href="#">Certification</a></li>
+          <li><a href="#">Gift Wrapping</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Care Instructions</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Exchange</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Lumière Fine Jewellery. All rights reserved.</p>
+      <div class="payment-icons">
+        <span>Visa</span>
+        <span>Mastercard</span>
+        <span>UPI</span>
+        <span>PayTM</span>
+        <span>COD</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>YOUR BAG</h3>
+      <button class="close-cart" id="closeCart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">♦</div>
+        <p>Your bag is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotalPrice">₹0</span>
+      </div>
+      <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+      <button class="continue-btn" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">♦</span>
+    <span id="toastMsg">Added to bag!</span>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
